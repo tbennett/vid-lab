@@ -5,13 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rich Media Demo</title>
+        <style>
+            audio,
+            video {
+                display: block;
+                margin: 2rem;
+            }
+        </style>
     </head>
     <body>
         <h1>Examples of adding rich media to a web page</h1>
         <main>
             <section class="basics">
                 <h2>Rich Media Basics</h2>
-                <video src=""></video>
+
+                <audio controls>
+                    <source src="audio/ufos.ogg" type="audio/ogg" />
+                    <source src="audio/ufos.mp3" type="audio/mp3" />
+
+                    <p>
+                        If you are reading this, it means your browser does not
+                        support HTML 5 rich media.
+                    </p>
+                </audio>
+
+                <video controls>
+                    <source src="video/vw.mp4" type="video/mp4" />
+                    <source src="video/vw.webm" type="video/webm" />
+
+                    <p>
+                        If you are reading this, it means your browser does not
+                        support HTML 5 rich media.
+                    </p>
+                </video>
             </section>
         </main>
     </body>
